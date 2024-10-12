@@ -3,7 +3,7 @@
 
 namespace ssetcolor
 {
-    std::string reset(const std::string& text) { return "\033[39m" + text + "\033[39m"; }
+    std::string reset(const std::string& text) { return "\033[0m" + text + "\033[0m"; }
     std::string bold(const std::string& text) { return "\033[1m" + text + "\033[0m"; }
     std::string fade(const std::string& text) { return "\033[2m" + text + "\033[0m"; }
     std::string italic(const std::string& text) { return "\033[3m" + text + "\033[0m"; }
